@@ -61,6 +61,7 @@ class CityAttractionsTool(BaseTool):
     def get_attractions(self, city: str) -> List[Dict]:
         """Get all attractions for a city with their coordinates"""
         try:
+            print(city)
             self.cursor.execute('''
                 SELECT name, category, description 
                 FROM attractions 
