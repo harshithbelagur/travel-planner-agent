@@ -37,9 +37,15 @@ class FlightSearchTool(BaseTool):
         """Execute the flight search"""
         try:
             # Parse input JSON
-            # data = json.loads(input_str.replace("'", '"'))
-            data = json.loads(input_str)
-
+            data = json.loads(input_str.replace("'", '"'))
+            if isinstance(input_str, dict):
+                data = input_str
+            else:
+                # Clean up the input string and parse JSON
+                input_str = input_str.replace("'", '"').strip()
+                if not input_str.startswith('{'):
+                    input_str = '{' + input_str + '}'
+                data = json.loads(input_str)
             
             # Extract parameters
             departure_airport = data['departure_airport']
