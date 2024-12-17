@@ -2,7 +2,7 @@ This repo is for the Course Project of COMS E6998 - Intro to Deep Learning and G
 
 The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here).
 
-Please make sure that you have set up your OPENAI_KEY and SERPAPI_API_KEY environment variables correctly before proceeding.
+Please make sure that you have set up your OPENAI_API_KEY and SERPAPI_API_KEY environment variables correctly before proceeding.
 
 To run the code, use the requirements.txt file. Then, set up the SQL and VectorDB using the v1.ipynb notebook.
 
