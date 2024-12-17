@@ -4,7 +4,7 @@ The goal of the code is to test the performance of ReAct and ReWOO using Commerc
 
 To run the code, use the requirements.txt file. Then, set up the SQL and VectorDB using the v1.ipynb notebook.
 
-To run the tests, run the other notebooks and here is the explanation of each notebook -
+To run the tests, run the other notebooks and here is the explanation of each notebook - </br>
 1.
 
 
