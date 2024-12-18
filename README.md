@@ -1,12 +1,14 @@
+# ReAct vs ReWOO - A comparison using Travel Planning
+
 This repo is for the Course Project of COMS E6998 - Intro to Deep Learning and GenAI at Columbia University.
 
-The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here).
+The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here). Report.pdf contains detailed explanations including the background, explanation of the tools, and different scenarios tested.
 
 Please make sure that you have set up your OPENAI_API_KEY and SERPAPI_API_KEY environment variables correctly before proceeding.
 
 To run the code, use the requirements.txt file. Then, set up the SQL and VectorDB using the v1.ipynb notebook.
 
-To run the tests, run the appropriate notebooks, and here is the explanation of each notebook - </br>
+To run the different scenarios as mentioned in the report, run the appropriate notebooks, and here is the explanation of each notebook - </br>
 1. rewoo-custom-5-tools.ipynb - ReWOO with all tools
 2. rewoo-custom-5-tools-without-llm.ipynb - ReWOO with dictionary instead of LLM tool
 3. rewoo-custom-4-tools.ipynb - ReWOO with 4 tools
@@ -20,3 +22,14 @@ To run the tests, run the appropriate notebooks, and here is the explanation of 
 11. react-langgraph (missing travel dates).ipynb - ReAct with second tool failure
 
 All tools for ReAct are in the tools folder and those for ReWOO are in the rewoo-tools folder. We had to have a separate rewoo-tools folder as there are customizations done to handle string as inputs
+
+Our results as seen in the respective notebooks are as follows - 
+| **Scenario**           | **ReAct**  | **ReWOO**  | **Difference** |
+|-------------------------|------------|------------|----------------|
+| 5 tools                | $0.10      | $0.12      | +20%           |
+| 5 tools ReWOO modified | $0.102     | $0.102     | 0%             |
+| 4 tools                | $0.08      | $0.10      | +25%           |
+| 3 tools                | $0.04      | $0.09      | +125%          |
+| 1st tool failure       | $0.01      | $0.03      | +200%          |
+| 2nd tool failure       | $0.03      | $0.05      | +67%           |
+
