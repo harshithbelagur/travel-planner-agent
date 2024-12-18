@@ -1,12 +1,27 @@
-# ReAct vs ReWOO - A comparison using Travel Planning
+# ReAct vs ReWOO - A Comparison using Travel Planning
 
 This repo is for the Course Project of COMS E6998 - Intro to Deep Learning and GenAI at Columbia University.
 
-The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here). Report.pdf contains detailed explanations including the background, explanation of the tools, and different scenarios tested.
+The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here using GPT-4o). Report.pdf contains detailed explanations including the background, explanation of the tools, and different scenarios tested.
 
 Please make sure that you have set up your OPENAI_API_KEY and SERPAPI_API_KEY environment variables correctly before proceeding.
 
 To run the code, use the requirements.txt file. Then, set up the SQL and VectorDB using the v1.ipynb notebook.
+
+It is recommended to use a Python environment. Follow these steps to set up the environment:
+
+```bash
+# Create a new conda environment
+conda create --name coms-e6998 python=3.12
+
+# Activate the environment
+conda activate coms-e6998
+
+# Install required dependencies
+pip install -r requirements.txt
+
+# Deactivate the environment when done
+conda deactivate
 
 To run the different scenarios as mentioned in the report, run the appropriate notebooks, and here is the explanation of each notebook - </br>
 1. rewoo-custom-5-tools.ipynb - ReWOO with all tools
