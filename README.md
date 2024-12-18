@@ -22,6 +22,7 @@ pip install -r requirements.txt
 
 # Deactivate the environment when done
 conda deactivate
+```
 
 To run the different scenarios as mentioned in the report, run the appropriate notebooks, and here is the explanation of each notebook - </br>
 1. rewoo-custom-5-tools.ipynb - ReWOO with all tools
