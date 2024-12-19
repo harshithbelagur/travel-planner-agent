@@ -1,6 +1,7 @@
 # ReAct vs ReWOO - A Comparison using Travel Planning
 
 This repo is for the Course Project of COMS E6998 - Intro to Deep Learning and GenAI at Columbia University.
+Students - Harshith Belagur(hb2779), Addrish Roy(ar4613)
 
 The goal of the code is to test the performance of ReAct and ReWOO using Commercial LLMs (for travel planning here using GPT-4o). Report.pdf contains detailed explanations including the background, explanation of the tools, and different scenarios tested.
 
